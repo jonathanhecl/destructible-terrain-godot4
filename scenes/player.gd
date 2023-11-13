@@ -32,7 +32,7 @@ func _physics_process(delta: float) -> void:
 		if Input.is_action_just_pressed("ui_accept"):
 			if jump == 0:
 				jump_dir = Input.get_action_strength("ui_right") - Input.get_action_strength("ui_left")
-				jump = 20
+				jump = 10
 		walk = Input.get_action_strength("ui_right") - Input.get_action_strength("ui_left")
 	var valid_pos = position
 	for dir in [Vector2(walk, -3), Vector2(walk, -2), Vector2(walk, -1), Vector2(walk, 0), Vector2(walk, 1), Vector2(walk, 2), Vector2(walk, 3)]:

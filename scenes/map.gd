@@ -3,7 +3,7 @@ extends Node2D
 @onready var back: Sprite2D = $Back
 @onready var front: Sprite2D = $Front
 
-const TRANSPARENT := Color(0.5,0.5,1,0)
+const TRANSPARENT := Color(0,0,0,0.1)
 var line := []
 
 func _ready():
