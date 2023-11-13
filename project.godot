@@ -11,5 +11,10 @@ config_version=5
 [application]
 
 config/name="Destructible-Terrain-godot 4"
+run/main_scene="res://scenes/main.tscn"
 config/features=PackedStringArray("4.1", "Forward Plus")
 config/icon="res://icon.svg"
+
+[rendering]
+
+environment/defaults/default_clear_color=Color(0.145098, 0.694118, 0.956863, 1)
