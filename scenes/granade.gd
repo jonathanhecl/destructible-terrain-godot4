@@ -47,4 +47,5 @@ func move_granade():
 		position = new_position
 	
 func _on_timer_timeout():
+	get_parent().current_map.explosion(position, 80)
 	self.queue_free()
