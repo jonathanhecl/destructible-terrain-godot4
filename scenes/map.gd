@@ -3,7 +3,7 @@ extends Node2D
 @onready var back: Sprite2D = $Back
 @onready var front: Sprite2D = $Front
 
-const TRANSPARENT := Color(0,0,0,0.1)
+const TRANSPARENT := Color(0,0,0,0)
 var line := []
 
 func _ready():
@@ -30,7 +30,7 @@ func generate_map():
 		line.append(high)
 		for y in range(high):
 			front_data.set_pixelv(Vector2(x, y), TRANSPARENT)
-			back_data.set_pixelv(Vector2(x, y-5), TRANSPARENT)
+			back_data.set_pixelv(Vector2(x, y), TRANSPARENT)
 			
 	front.texture = ImageTexture.create_from_image(front_data)
 	back.texture = ImageTexture.create_from_image(back_data)

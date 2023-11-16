@@ -9,4 +9,4 @@ script = ExtResource("1_wh2bk")
 offset_left = -6.0
 offset_top = -28.0
 offset_right = 6.0
-color = Color(1, 0, 0, 1)
+color = Color(0, 1, 0.0156863, 1)

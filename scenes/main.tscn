@@ -13,3 +13,12 @@ player = NodePath("Player")
 
 [node name="Player" parent="." instance=ExtResource("2_rpfk4")]
 position = Vector2(583, 43)
+
+[node name="Player2" parent="." instance=ExtResource("2_rpfk4")]
+position = Vector2(429, 46)
+
+[node name="Player3" parent="." instance=ExtResource("2_rpfk4")]
+position = Vector2(837, 41)
+
+[node name="Player4" parent="." instance=ExtResource("2_rpfk4")]
+position = Vector2(306, 37)
