@@ -18,6 +18,9 @@ func generate_map():
 	var front_data: Image = front.texture.get_image()
 	var back_data: Image = back.texture.get_image()
 	
+	front_data.convert(Image.FORMAT_RGBA8)
+	back_data.convert(Image.FORMAT_RGBA8)
+	
 	var noise: FastNoiseLite = FastNoiseLite.new()
 	noise.noise_type = FastNoiseLite.TYPE_VALUE_CUBIC
 	noise.seed = randi()
@@ -48,7 +51,7 @@ func explosion(pos: Vector2, radius: int) -> void:
 			if pixel.y < 0 or pixel.y >= front_data.get_height():
 				continue
 			front_data.set_pixelv(pixel, TRANSPARENT)
-	radius -= 20
+	radius -= 40
 	var back_data: Image = back.texture.get_image()
 	for x in range(-radius, radius + 1):
 		for y in range(-radius, radius + 1):
